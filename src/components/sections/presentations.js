@@ -150,7 +150,7 @@ const Presentations = ({ data }) => {
   const revealContainer = useRef(null);
   useEffect(() => sr.reveal(revealContainer.current, srConfig()), []);
 
-  const GRID_LIMIT = 6;
+  const GRID_LIMIT = 3;
   const presentations = data.filter(({ node }) => node);
   const firstSix = presentations.slice(0, GRID_LIMIT);
   const presentationsToShow = showMore ? presentations : firstSix;

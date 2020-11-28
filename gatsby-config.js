@@ -65,6 +65,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-katex`,
           {
             // https://www.gatsbyjs.org/packages/gatsby-remark-external-links
             resolve: 'gatsby-remark-external-links',

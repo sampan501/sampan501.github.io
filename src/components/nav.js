@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useRef } from 'react';
 import { Link } from 'gatsby';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
@@ -46,8 +46,8 @@ const StyledLogo = styled.div`
   a {
     display: block;
     color: ${colors.green};
-    width: 42px;
-    height: 42px;
+    width: 50px;
+    height: 50px;
     &:hover,
     &:focus {
       svg {
@@ -294,10 +294,10 @@ class Nav extends Component {
                 <CSSTransition classNames={fadeDownClass} timeout={timeout}>
                   <div style={{ transitionDelay: `${isHome ? navLinks.length * 100 : 0}ms` }}>
                     <StyledResumeButton
-                      href="/cv.pdf"
-                      target="_blank"
-                      rel="nofollow noopener noreferrer">
-                      CV
+                      href="/blog"
+                      // ref={revealBlogLink}
+                      >
+                      Blog
                     </StyledResumeButton>
                   </div>
                 </CSSTransition>

@@ -145,7 +145,7 @@ const Papers = ({ data }) => {
   const revealContainer = useRef(null);
   useEffect(() => sr.reveal(revealContainer.current, srConfig()), []);
 
-  const GRID_LIMIT = 6;
+  const GRID_LIMIT = 3;
   const papers = data.filter(({ node }) => node);
   const firstSix = papers.slice(0, GRID_LIMIT);
   const papersToShow = showMore ? papers : firstSix;
