@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { Layout } from '@components';
 import styled from 'styled-components';
 import { Main, theme } from '@styles';
+import "katex/dist/katex.min.css";
 const { colors } = theme;
 
 const StyledPostContainer = styled(Main)`

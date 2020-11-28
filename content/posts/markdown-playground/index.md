@@ -358,4 +358,7 @@ This paragraph has some `code` in it.
 
     This paragraph has some `code` in it.
 
-$x$
+Hi hello,
+$$
+\text{x} = \frac{-b\pm \sqrt{b^2-4ac}}{2a}
+$$
