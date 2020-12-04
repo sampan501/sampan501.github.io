@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { graphql, Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import kebabCase from 'lodash/kebabCase';
@@ -116,9 +116,20 @@ const StyledTags = styled.ul`
     }
   }
 `;
+const StyledTagsLink = styled(Link)`
+  ${mixins.inlineLink};
+  text-align: center;
+  margin: 0 auto;
+  font-family: ${fonts.SFMono};
+  font-size: ${fontSizes.sm};
+  &:after {
+    bottom: 0.1em;
+  }
+`;
 
 const blogPage = ({ location, data }) => {
   const posts = data.allMarkdownRemark.edges;
+  const revealTagsLink = useRef(null);
 
   return (
     <Layout location={location}>
@@ -130,9 +141,9 @@ const blogPage = ({ location, data }) => {
       <StyledMainContainer>
         <header>
           <h1 className="big-title">Black and White</h1>
-          <p className="subtitle">
-            a collection of my random musings
-          </p>
+          <StyledTagsLink to="/blog/tags" ref={revealTagsLink}>
+            view the tags
+          </StyledTagsLink>
         </header>
 
         <StyledGrid>

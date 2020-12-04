@@ -3,7 +3,7 @@ date: '3'
 title: 'hyppo'
 cover: './hyppo.png'
 github: 'https://github.com/neurodata/hyppo'
-external: 'https://arxiv.org/abs/1907.02088'
+external: 'https://hyppo.neurodata.io/'
 tech:
   - Python
   - Jupyter

@@ -7,6 +7,6 @@ range: 'June 2019 - Present'
 url: 'https://neurodata.io/'
 ---
 
-- Developed `hyppo`, a comprehensive independence testing package &mdash; 1st author on a [preprint](https://arxiv.org/abs/1907.02088)
-- Integrated Multiscale Graph Correlation, a powerful multivariate independence test &mdash; merged to [`scipy.stats`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.multiscale_graphcorr.html)
-- Creating the first multivariate nonparametric *k*-sample test &mdash; 1st author on a manuscript
+- Worked on a number of projects and papers extending developing robust and powerful multivariate hypothesis tests
+- Developed `hyppo`, a multivariate hypothesis testing package
+- Served as a TA for NeuroData Design I/II which is a year-long research based class
